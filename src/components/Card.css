@@ -1,0 +1,84 @@
+.card-container{
+    width: 300px;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    transform: translateY(10%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+}
+.card-container:hover{
+    transform: scale(0.9) translateY(10%);
+    box-shadow: 0 0 15px 0;
+}
+.image-container img{
+    
+    overflow: hidden;
+    height: 350px;
+    width: 240px;
+
+}
+.card-content{
+    margin: 1rem;
+    margin-top: 0.5rem;
+}
+h1,h3,p{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    margin-bottom: 0.5rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}.btn button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+.btn span{
+    background: var(--secondary-color);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.btn button:hover span{
+    width: 100%;
+
+}
+.btn button:hover{
+    border: none;
+}
+
+.flexSB {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

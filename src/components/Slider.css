@@ -1,0 +1,56 @@
+.slideCaption{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-150%) translateX(5%);
+    text-align: left;
+    color: aliceblue;
+}
+.slideCaption h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.slideCaption h5{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.slideCaption button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.slideCaption button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+.slideCaption span{
+    background: var(--secondary-color);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.slideCaption button:hover span{
+    width: 100%;
+
+}
+.slideCaption button:hover{
+    border: none;
+}
